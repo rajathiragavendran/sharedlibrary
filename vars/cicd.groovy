@@ -7,3 +7,8 @@ def newmaven()
 {
    sh 'mvn package'
 }
+
+def runselenium(pname)
+{
+  sh "java -jar /var/lib/jenkins/workspace/${pname}/testing.jar"
+}
